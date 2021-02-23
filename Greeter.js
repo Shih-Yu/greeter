@@ -97,6 +97,9 @@
       self.firstName = firstName || "";
       self.lastName = lastName || "";
       self.language = language || "en";
+
+      // validate the function params when it is created
+      self.validate();
     }
 
     // Point all objects created for Greeter to prototype
