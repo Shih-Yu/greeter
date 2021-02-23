@@ -1,6 +1,7 @@
 // IIFE passing in window Object as the global argument and 
 // jQuery as the $ argument
-(function(global, $) {
+// ; - is added incase previous code to this might not complete its semicolon
+;(function(global, $) {
 
 // Create a function constructor to generate the Greeter Object
     let Greeter = function(firstName, lastName, language) {
