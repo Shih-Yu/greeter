@@ -7,7 +7,7 @@
       return new Greeter.init(firstName,lastName, language);
     }
 
-    // Add languages to greet
+    // Add languages to greet but hidden within scope of IIFE
     let supportedLangs = ["en", "es"];
 
     // greetings object
