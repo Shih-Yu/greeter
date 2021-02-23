@@ -65,6 +65,25 @@
         this.language = lang;
         this.validate();
         return this;
+      },
+      // jQuery
+      HTMLGreeting: function(selector, formal) {
+        // throw error if misssing jQuery or selector
+        if(!$) {
+          throw "jQuery not loaded";
+        }
+        if(!selector) {
+          throw "Missing jQuery selector";
+        }
+
+        let msg;
+        if(formal) {
+          msg = this.formalGreeting();
+        } else {
+          msg = greeting();
+        }
+        $(selector).html(msg);
+        return this;
       }
     };
 
